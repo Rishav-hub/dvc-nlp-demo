@@ -1,0 +1,20 @@
+[2021-10-30 09:01:58,336: INFO: stage_01_prepare]: 
+********************
+[2021-10-30 09:01:58,336: INFO: stage_01_prepare]: >>>>> stage one started <<<<<
+[2021-10-30 09:01:58,336: ERROR: stage_01_prepare]: main() missing 1 required positional argument: 'params_path'
+Traceback (most recent call last):
+  File "src/stage_01_prepare.py", line 52, in <module>
+    main(config_path=parsed_args.config)
+TypeError: main() missing 1 required positional argument: 'params_path'
+[2021-10-30 09:02:05,324: INFO: stage_01_prepare]: 
+********************
+[2021-10-30 09:02:05,325: INFO: stage_01_prepare]: >>>>> stage one started <<<<<
+[2021-10-30 09:02:05,325: ERROR: stage_01_prepare]: main() missing 1 required positional argument: 'params_path'
+Traceback (most recent call last):
+  File "src/stage_01_prepare.py", line 52, in <module>
+    main(config_path=parsed_args.config)
+TypeError: main() missing 1 required positional argument: 'params_path'
+[2021-10-30 09:02:39,280: INFO: stage_01_prepare]: 
+********************
+[2021-10-30 09:02:39,280: INFO: stage_01_prepare]: >>>>> stage one started <<<<<
+[2021-10-30 09:02:39,284: INFO: stage_01_prepare]: >>>>> stage one completed! all the data are saved in local <<<<<n
