@@ -7,7 +7,7 @@ numpy
 Scipy
 pyyaml
 scikit-learn
-lmxl
+lxml
 matplotlib
 ### local packages -
 -e . # << uncomment this to install from setup.py
