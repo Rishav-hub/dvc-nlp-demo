@@ -18,6 +18,6 @@ def process_posts(fd_in, fd_out_train, fd_out_test, target_tag, split):
         except Exception as e:
             logging.exception(e, message="Skiping the broken line while processg line: {}".format(line))
             logging.error(line)
-            continue
+            continue    
 
 

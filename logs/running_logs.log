@@ -18,3 +18,47 @@ TypeError: main() missing 1 required positional argument: 'params_path'
 ********************
 [2021-10-30 09:02:39,280: INFO: stage_01_prepare]: >>>>> stage one started <<<<<
 [2021-10-30 09:02:39,284: INFO: stage_01_prepare]: >>>>> stage one completed! all the data are saved in local <<<<<n
+[2021-10-30 09:28:50,885: INFO: stage_01_prepare]: 
+********************
+[2021-10-30 09:28:50,890: INFO: stage_01_prepare]: >>>>> stage one started <<<<<
+[2021-10-30 09:28:50,909: ERROR: stage_01_prepare]: [Errno 2] No such file or directory: 'artifacts\\prepared\\train.tsv'
+Traceback (most recent call last):
+  File "src/stage_01_prepare.py", line 63, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_01_prepare.py", line 42, in main
+    with open(train_data_path, encoding="utf8") as fd_out_train:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\prepared\\train.tsv'
+[2021-10-30 09:29:54,252: INFO: stage_01_prepare]: 
+********************
+[2021-10-30 09:29:54,252: INFO: stage_01_prepare]: >>>>> stage one started <<<<<
+[2021-10-30 09:29:54,256: INFO: stage_01_prepare]: >>>>> stage one completed! all the data are saved in local <<<<<n
+[2021-10-30 09:30:23,477: INFO: stage_01_prepare]: 
+********************
+[2021-10-30 09:30:23,478: INFO: stage_01_prepare]: >>>>> stage one started <<<<<
+[2021-10-30 09:30:23,502: ERROR: stage_01_prepare]: [Errno 2] No such file or directory: 'artifacts\\prepared\\train.tsv'
+Traceback (most recent call last):
+  File "src/stage_01_prepare.py", line 63, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_01_prepare.py", line 42, in main
+    with open(train_data_path, encoding="utf8") as fd_out_train:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\prepared\\train.tsv'
+[2021-10-30 09:33:03,740: INFO: stage_01_prepare]: 
+********************
+[2021-10-30 09:33:03,741: INFO: stage_01_prepare]: >>>>> stage one started <<<<<
+[2021-10-30 09:33:03,750: ERROR: stage_01_prepare]: [Errno 2] No such file or directory: 'artifacts\\prepared\\train.tsv'
+Traceback (most recent call last):
+  File "src/stage_01_prepare.py", line 64, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_01_prepare.py", line 42, in main
+    with open(train_data_path, encoding="utf8") as fd_out_train:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\prepared\\train.tsv'
+[2021-10-30 09:46:12,558: INFO: stage_01_prepare]: 
+********************
+[2021-10-30 09:46:12,558: INFO: stage_01_prepare]: >>>>> stage one started <<<<<
+[2021-10-30 09:46:12,562: ERROR: stage_01_prepare]: [Errno 2] No such file or directory: 'artifacts\\prepared\\train.tsv'
+Traceback (most recent call last):
+  File "src/stage_01_prepare.py", line 63, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File "src/stage_01_prepare.py", line 42, in main
+    with open(train_data_path, encoding="utf8") as fd_out_train:
+FileNotFoundError: [Errno 2] No such file or directory: 'artifacts\\prepared\\train.tsv'
