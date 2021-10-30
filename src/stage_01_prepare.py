@@ -39,8 +39,8 @@ def main(config_path, params_path):
     test_data_path = os.path.join(prepare_data_dir_path, artifacts['TEST_DATA'])
 
     with open(input_data, encoding="utf8") as fd_in:
-        with open(train_data_path, encoding="utf8") as fd_out_train:
-            with open(test_data_path, encoding="utf8") as fd_out_test:
+        with open(train_data_path, "w", encoding="utf8") as fd_out_train:
+            with open(test_data_path, "w",encoding="utf8") as fd_out_test:
                     process_posts(fd_in, fd_out_train, fd_out_test, "<python>",split)
                 
         

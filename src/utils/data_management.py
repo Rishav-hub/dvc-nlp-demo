@@ -16,7 +16,7 @@ def process_posts(fd_in, fd_out_train, fd_out_test, target_tag, split):
             text = title + " " + body
             fd_out.write("{}\t{}\t{}\n".format(pid, label, text))
         except Exception as e:
-            logging.exception(e, message="Skiping the broken line while processg line: {}".format(line))
+            logging.exception("Skiping the broken line while processg line: {}".format(line))
             logging.error(line)
             continue    
 
