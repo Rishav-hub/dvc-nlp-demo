@@ -1,4 +1,4 @@
-# dvc-project-template
+# dvc-nlp-demo
 DVC project template
 
 ## STEPS -
