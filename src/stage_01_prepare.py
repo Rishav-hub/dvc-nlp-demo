@@ -4,6 +4,7 @@ import shutil
 from tqdm import tqdm
 import logging
 from src.utils.all_utils import read_yaml, create_directory
+from src.utils.data_management import process_posts
 import random
 
 logging_str = "[%(asctime)s: %(levelname)s: %(module)s]: %(message)s"
@@ -33,6 +34,16 @@ def main(config_path, params_path):
     prepare_data_dir_path = os.path.join(artifacts['ARTIFACTS_DIR'], artifacts['PREPARED_DATA'])
 
     create_directory([prepare_data_dir_path])
+
+    train_data_path = os.path.join(prepare_data_dir_path, artifacts['TRAIN_DATA'])
+    test_data_path = os.path.join(prepare_data_dir_path, artifacts['TEST_DATA'])
+
+    with open(input_data, encoding="utf8") as fd_in:
+        with open(train_data_path, encoding="utf8") as fd_out_train:
+            with open(test_data_path, encoding="utf8") as fd_out_test:
+                    process_posts(fd_in, fd_out_train, fd_out_test, "<python>",split)
+                
+        
 
 
 
