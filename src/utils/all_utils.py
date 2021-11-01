@@ -3,6 +3,7 @@ import os
 import json
 import time
 import logging
+import pandas as pd
 
 def read_yaml(path_to_yaml: str) -> dict:
     """
