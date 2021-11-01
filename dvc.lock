@@ -9,6 +9,9 @@ stages:
     - path: data/data.xml
       md5: a304afb96060aad90176268345e10355
       size: 37891850
+    - path: params.yaml
+      md5: ae23e8828b372ad8da616690418d0685
+      size: 211
     - path: src/stage_01_prepare.py
       md5: 564cac411634a5fe2b383fc427b9eb9e
       size: 2275
@@ -41,6 +44,9 @@ stages:
     - path: config/config.yaml
       md5: bd818ebadf9a88ef7da611775b1aa8bb
       size: 373
+    - path: params.yaml
+      md5: ae23e8828b372ad8da616690418d0685
+      size: 211
     - path: src/stage_02_featurization.py
       md5: 62fcf402438ff07d126838636b41d545
       size: 2924
@@ -70,6 +76,9 @@ stages:
     - path: config/config.yaml
       md5: bd818ebadf9a88ef7da611775b1aa8bb
       size: 373
+    - path: params.yaml
+      md5: ae23e8828b372ad8da616690418d0685
+      size: 211
     - path: src/stage_03_training.py
       md5: 53840f24ee000d88a604b929f40bcf4b
       size: 2268

@@ -8,6 +8,7 @@ stages:
       - src/utils/all_utils.py
       - src/utils/data_management.py
       - config/config.yaml
+      - params.yaml
 
     params:
       - prepare.seed
@@ -26,6 +27,7 @@ stages:
       - src/utils/all_utils.py
       - src\utils\featurize.py
       - config/config.yaml
+      - params.yaml
     params:
       - featurize.ngrams
       - featurize.max_features
@@ -40,6 +42,7 @@ stages:
       - artifacts\prepared\train.tsv
       - src/utils/all_utils.py
       - config/config.yaml
+      - params.yaml
     params:
       - train.seed
       - train.n_est
