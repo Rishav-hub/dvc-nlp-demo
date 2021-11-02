@@ -6,7 +6,7 @@ import re
 def process_posts(fd_in, fd_out_train, fd_out_test, target_tag, split):
     for line in tqdm(fd_in):
         try:
-            fd_out = fd_out_train if random.random() < split else fd_out_test
+            fd_out = fd_out_train if random.random() > split else fd_out_test
             attr = ET.fromstring(line).attrib
 
             pid = attr.get("Id", "")
