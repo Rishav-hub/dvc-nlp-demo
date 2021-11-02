@@ -15,25 +15,25 @@ stages:
       - prepare.split
 
     outs:
-      - artifacts\prepared\train.tsv
-      - artifacts\prepared\test.tsv
+      - artifacts/prepared/train.tsv
+      - artifacts/prepared/test.tsv
   
   featurize:
     cmd: python src/stage_02_featurization.py -c config/config.yaml -p params.yaml
     deps:
       - src/stage_02_featurization.py
-      - artifacts\prepared\test.tsv
-      - artifacts\prepared\train.tsv
+      - artifacts/prepared/test.tsv
+      - artifacts/prepared/train.tsv
       - src/utils/all_utils.py
-      - src\utils\featurize.py
+      - src/utils/featurize.py
       - config/config.yaml
       - params.yaml
     params:
       - featurize.ngrams
       - featurize.max_features
     outs:
-      - artifacts\features\train.pkl
-      - artifacts\features\test.pkl
+      - artifacts/features/train.pkl
+      - artifacts/features/test.pkl
   
   train:
     cmd: python src/stage_03_training.py -c config/config.yaml -p params.yaml
@@ -48,7 +48,7 @@ stages:
       - train.n_est
       - train.min_split
     outs:
-      - artifacts\model\model.pkl
+      - artifacts/model/model.pkl
   
   evaluate:
     cmd: python src/stage_04_evaluate.py --config=config/config.yaml
