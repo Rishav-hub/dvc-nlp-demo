@@ -23,7 +23,7 @@ jobs:
           pip install -r requirements.txt
 
           dvc repro -v # -v means verbose
-          python -m cml.cli train --config config.yml
+
 
           echo "# REPORTS" >> report.md
           echo "# metrics" >> report.md
