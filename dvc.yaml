@@ -51,12 +51,12 @@ stages:
       - artifacts\model\model.pkl
   
   evaluate:
-    cmd: python src/stage_04_evaluate.py --config=configs/config.yaml
+    cmd: python src/stage_04_evaluate.py --config=config/config.yaml
     deps:
       - src/stage_04_evaluate.py
       - artifacts/features/test.pkl
       - src/utils/all_utils.py
-      - configs/config.yaml
+      - config/config.yaml
       - artifacts/model/model.pkl
     metrics:
       - scores.json:
