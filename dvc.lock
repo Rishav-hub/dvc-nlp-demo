@@ -70,7 +70,7 @@ stages:
   train:
     cmd: python src/stage_03_training.py -c config/config.yaml -p params.yaml
     deps:
-    - path: artifacts\prepared\train.tsv
+    - path: artifacts/prepared/train.tsv
       md5: 553034c4cf40efc63c99c19fe98610d0
       size: 18986541
     - path: config/config.yaml
